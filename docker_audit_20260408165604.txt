@@ -1,0 +1,41 @@
+﻿=============================================
+             DockerAuditor                 
+       AuditorÃ­a Forense de Docker         
+=============================================
+Fecha: 04/08/2026 16:56:04
+=============================================
+
+*****************************
+1. INFORMACIÃ“N GENERAL
+*****************************
+Client:  Version:           29.3.1  API version:       1.54  Go version:        go1.25.8  Git commit:        c2be9cc  Built:             Wed Mar 25 16:16:33 2026  OS/Arch:           windows/amd64  Context:           desktop-linux  Server: Docker Desktop 4.68.0 (223695)  Engine:   Version:          29.3.1   API version:      1.54 (minimum version 1.40)   Go version:       go1.25.8   Git commit:       f78c987   Built:            Wed Mar 25 16:13:48 2026   OS/Arch:          linux/amd64   Experimental:     false  containerd:   Version:          v2.2.1   GitCommit:        dea7da592f5d1d2b7755e3a161be07f43fad8f75  runc:   Version:          1.3.4   GitCommit:        v1.3.4-0-gd6d73eb8  docker-init:   Version:          0.19.0   GitCommit:        de40ad0
+Client:  Version:    29.3.1  Context:    desktop-linux  Debug Mode: false  Plugins:   agent: Docker AI Agent Runner (Docker Inc.)     Version:  v1.39.0     Path:     C:\Program Files\Docker\cli-plugins\docker-agent.exe   ai: Docker AI Agent - Ask Gordon (Docker Inc.)     Version:  v1.20.2     Path:     C:\Program Files\Docker\cli-plugins\docker-ai.exe   buildx: Docker Buildx (Docker Inc.)     Version:  v0.32.1-desktop.1     Path:     C:\Program Files\Docker\cli-plugins\docker-buildx.exe   compose: Docker Compose (Docker Inc.)     Version:  v5.1.1     Path:     C:\Program Files\Docker\cli-plugins\docker-compose.exe   debug: Get a shell into any image or container (Docker Inc.)     Version:  0.0.47     Path:     C:\Program Files\Docker\cli-plugins\docker-debug.exe   desktop: Docker Desktop commands (Docker Inc.)     Version:  v0.3.0     Path:     C:\Program Files\Docker\cli-plugins\docker-desktop.exe   dhi: CLI for managing Docker Hardened Images (Docker Inc.)     Version:  v0.0.2     Path:     C:\Program Files\Docker\cli-plugins\docker-dhi.exe   extension: Manages Docker extensions (Docker Inc.)     Version:  v0.2.31     Path:     C:\Program Files\Docker\cli-plugins\docker-extension.exe   init: Creates Docker-related starter files for your project (Docker Inc.)     Version:  v1.4.0     Path:     C:\Program Files\Docker\cli-plugins\docker-init.exe   mcp: Docker MCP Plugin (Docker Inc.)     Version:  v0.40.3     Path:     C:\Program Files\Docker\cli-plugins\docker-mcp.exe   model: Docker Model Runner (Docker Inc.)     Version:  v1.1.28     Path:     C:\Program Files\Docker\cli-plugins\docker-model.exe   offload: Docker Offload (Docker Inc.)     Version:  v0.5.81     Path:     C:\Program Files\Docker\cli-plugins\docker-offload.exe   pass: Docker Pass Secrets Manager Plugin (beta) (Docker Inc.)     Version:  v0.0.24     Path:     C:\Program Files\Docker\cli-plugins\docker-pass.exe   sandbox: Docker Sandbox (Docker Inc.)     Version:  v0.12.0     Path:     C:\Program Files\Docker\cli-plugins\docker-sandbox.exe   sbom: View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc.)     Version:  0.6.0     Path:     C:\Program Files\Docker\cli-plugins\docker-sbom.exe   scout: Docker Scout (Docker Inc.)     Version:  v1.20.3     Path:     C:\Program Files\Docker\cli-plugins\docker-scout.exe  Server:  Containers: 4   Running: 3   Paused: 0   Stopped: 1  Images: 8  Server Version: 29.3.1  Storage Driver: overlay2   Backing Filesystem: extfs   Supports d_type: true   Using metacopy: false   Native Overlay Diff: true   userxattr: false  Logging Driver: json-file  Cgroup Driver: cgroupfs  Cgroup Version: 2  Plugins:   Volume: local   Network: bridge host ipvlan macvlan null overlay   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog  CDI spec directories:   /etc/cdi   /var/run/cdi  Discovered Devices:   cdi: docker.com/gpu=webgpu  Swarm: inactive  Runtimes: runc io.containerd.runc.v2 nvidia  Default Runtime: runc  Init Binary: docker-init  containerd version: dea7da592f5d1d2b7755e3a161be07f43fad8f75  runc version: v1.3.4-0-gd6d73eb8  init version: de40ad0  Security Options:   seccomp    Profile: builtin   cgroupns  Kernel Version: 6.6.87.1-microsoft-standard-WSL2  Operating System: Docker Desktop  OSType: linux  Architecture: x86_64  CPUs: 20  Total Memory: 15.57GiB  Name: docker-desktop  ID: 67656462-5009-4b56-af03-4934e9ffac4f  Docker Root Dir: /var/lib/docker  Debug Mode: false  HTTP Proxy: http.docker.internal:3128  HTTPS Proxy: http.docker.internal:3128  No Proxy: hubproxy.docker.internal  Labels:   com.docker.desktop.address=npipe://\\.\pipe\docker_cli  Experimental: false  Insecure Registries:   hubproxy.docker.internal:5555   ::1/128   127.0.0.0/8  Live Restore Enabled: false  Firewall Backend: iptables 
+*****************************
+2. USO DEL SISTEMA
+*****************************
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE Images          8         4         3.106GB   1.429GB (46%) Containers      4         3         1.777kB   674B (37%) Local Volumes   6         2         394.3MB   134.1MB (34%) Build Cache     0         0         0B        0B
+*****************************
+3. CONTENEDORES
+*****************************
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS                        PORTS                                     NAMES cc1c2d8e8deb   httpd:latest   "httpd-foreground"       2 minutes ago   Up 2 minutes                  0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   apache-test b549610c2061   mysql:8.0      "docker-entrypoint.sÔÇª"   4 minutes ago   Up 4 minutes                  3306/tcp, 33060/tcp                       mysql-test ec8dd374a06e   nginx:latest   "/docker-entrypoint.ÔÇª"   5 minutes ago   Up 5 minutes                  0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   nginx-test a5f0f69a8efa   postgres:15    "docker-entrypoint.sÔÇª"   4 months ago    Exited (255) 21 minutes ago   0.0.0.0:55432->5432/tcp                   postgres-english-app
+*****************************
+4. IMÃGENES
+*****************************
+IMAGE                    ID             DISK USAGE   CONTENT SIZE   EXTRA grafana/grafana:latest   4f2ba943b1de        681MB             0B         httpd:latest             e48c16e072a6        117MB             0B   U     mysql:8.0                a123df39bc7c        786MB             0B   U     nginx:latest             a716c9c12c38        161MB             0B   U     postgres:15              cadaf03a4e37        444MB             0B   U     postgres:16              8dbd8d750582        451MB             0B         postgres:16-alpine       24a90047f2d2        275MB             0B         prom/prometheus:latest   b5239da13ab0        270MB             0B        
+*****************************
+5. REDES
+*****************************
+NETWORK ID     NAME      DRIVER    SCOPE 289c37d1d2c4   bridge    bridge    local a98063b2f024   host      host      local d97492c5473c   none      null      local
+*****************************
+6. VOLÃšMENES
+*****************************
+DRIVER    VOLUME NAME local     4b3a23c82dffbaffaf04ba676a5083c7f8f60986905e98b1f33c056127a82b40 local     ccc21c27029b637c475dd70c8f93e48d6284b6c0bd49c57782dcc3f7efdeb81e local     d5300c901815bdb57751ca5682432866b87693bd74113b3f0d307053ec8ff73d local     ea7e4618010e2a551e2a7741bcf0f5e332b110cfd07b79b797a1aa5d0c402ec3 local     ffe4b37e057a19011b7cd1e25f32882528af419c77e64dd27eef94aebf8a26c7 local     monitoring_grafana-storage
+*****************************
+7. PLUGINS
+*****************************
+ID        NAME      DESCRIPTION   ENABLED
+*****************************
+8. CHECKOV
+*****************************
+No se encontraron archivos Dockerfile o docker-compose.yml en el directorio actual.
+No se realizÃ³ el anÃ¡lisis de seguridad con Checkov.
